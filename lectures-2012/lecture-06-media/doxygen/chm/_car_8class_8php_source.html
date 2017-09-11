@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Example Project: Исходный файл /srv/www/vhosts/ppse/classes/Car.class.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div id="top">
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Example Project&#160;<span id="projectnumber">1.0.0</span></div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>/srv/www/vhosts/ppse/classes/Car.class.php</h1>  </div>
+</div>
+<div class="contents">
+<a href="_car_8class_8php.html">См. документацию.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
+<a name="l00010"></a><a class="code" href="class_car.html">00010</a> <span class="keyword">class </span><a class="code" href="class_car.html">Car</a> <span class="keyword">extends</span> <a class="code" href="class_vehicle.html">Vehicle</a> {
+<a name="l00016"></a><a class="code" href="class_car.html#acb9fa9477df9645390a385d0acc2c91d">00016</a>     <span class="keyword">protected</span> <a class="code" href="class_car.html#acb9fa9477df9645390a385d0acc2c91d">$doorsCount</a>;
+<a name="l00017"></a>00017     
+<a name="l00023"></a><a class="code" href="class_car.html#a2be41c7ceba2c9d19097ea5419dab038">00023</a>     <span class="keyword">protected</span> <a class="code" href="class_car.html#a2be41c7ceba2c9d19097ea5419dab038">$wheelsCount</a>;
+<a name="l00024"></a>00024 
+<a name="l00032"></a><a class="code" href="class_car.html#a2bea0f302e3c3438d929df7df60b66a7">00032</a>     <span class="keyword">public</span> <a class="code" href="class_car.html#a2bea0f302e3c3438d929df7df60b66a7">$engine</a>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034     
+<a name="l00038"></a><a class="code" href="class_car.html#a095c5d389db211932136b53f25f39685">00038</a>     <span class="keyword">public</span> function <a class="code" href="class_car.html#a095c5d389db211932136b53f25f39685">__construct</a>() {
+<a name="l00039"></a>00039         <a class="code" href="class_car.html#a095c5d389db211932136b53f25f39685">parent::__construct</a>();
+<a name="l00040"></a>00040     } <span class="comment">// end of constructor</span>
+<a name="l00041"></a>00041     
+<a name="l00042"></a>00042     
+<a name="l00055"></a><a class="code" href="class_car.html#a236745178a93a18b6b00759b97c62942">00055</a>     <span class="keyword">public</span> function <a class="code" href="class_car.html#a236745178a93a18b6b00759b97c62942">doorsCount</a>(<a class="code" href="class_car.html#acb9fa9477df9645390a385d0acc2c91d">$doorsCount</a>=NULL) {
+<a name="l00056"></a>00056         <span class="keywordflow">if</span> ( !func_get_args() ) {
+<a name="l00057"></a>00057             <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_car.html#a236745178a93a18b6b00759b97c62942">doorsCount</a>;
+<a name="l00058"></a>00058         }
+<a name="l00059"></a>00059         $this-&gt;<a class="code" href="class_car.html#a236745178a93a18b6b00759b97c62942">doorsCount</a> = <a class="code" href="class_car.html#acb9fa9477df9645390a385d0acc2c91d">$doorsCount</a>;
+<a name="l00060"></a>00060         <span class="keywordflow">return</span> $this;
+<a name="l00061"></a>00061     } <span class="comment">// end of method doorsCount()</span>
+<a name="l00062"></a>00062     
+<a name="l00063"></a>00063     
+<a name="l00076"></a><a class="code" href="class_car.html#ab5ad2ac2826084b5521672436c1badd5">00076</a>     <span class="keyword">public</span> function <a class="code" href="class_car.html#ab5ad2ac2826084b5521672436c1badd5">wheelsCount</a>(<a class="code" href="class_car.html#a2be41c7ceba2c9d19097ea5419dab038">$wheelsCount</a>=NULL) {
+<a name="l00077"></a>00077         <span class="keywordflow">if</span> ( !func_get_args() ) {
+<a name="l00078"></a>00078             <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_car.html#ab5ad2ac2826084b5521672436c1badd5">wheelsCount</a>;
+<a name="l00079"></a>00079         }
+<a name="l00080"></a>00080         $this-&gt;<a class="code" href="class_car.html#ab5ad2ac2826084b5521672436c1badd5">wheelsCount</a> = <a class="code" href="class_car.html#a2be41c7ceba2c9d19097ea5419dab038">$wheelsCount</a>;
+<a name="l00081"></a>00081         <span class="keywordflow">return</span> $this;
+<a name="l00082"></a>00082     } <span class="comment">// end of method wheelsCount()</span>
+<a name="l00083"></a>00083     
+<a name="l00084"></a>00084 } <span class="comment">// end of class Car</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Example Project. Последние изменения: Fri Nov 11 2011 01:11:27. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
+</body>
+</html>

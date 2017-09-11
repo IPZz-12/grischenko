@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Профессиональный практикум программной инженерии</title>  
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+    var $dst = $("div.dst");
+    var $el = $("div.dst div.el");
+    $("#btn-show").click(function() {
+        $el.show();
+    });
+    $("#btn-hide").click(function() {
+        $el.hide();
+    });
+    $("#btn-toggle").click(function() {
+        $el.toggle();
+    });
+    $("#btn-fade-in").click(function() {
+        $el.fadeIn();
+    });
+    $("#btn-fade-out").click(function() {
+        $el.fadeOut();
+    });
+    $("#btn-slide-down").click(function() {
+        $el.slideDown();
+    });
+    $("#btn-slide-up").click(function() {
+        $el.slideUp();
+    });
+});
+  </script>
+  <style>
+    div.col_100 {
+        margin-bottom: 15px; 
+    }
+    div.dst {
+        border: 1px solid green;
+        padding: 15px;
+        height: 285px;
+        width: 400px;
+    }
+    div.el {
+        background-color: #91d639;
+        height: 100px;
+        width: 100px;
+        display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header clearfix">
+      <div class="logo">Профессиональный практикум программной инженерии</div>
+
+      <nav class="menu_main">
+        <ul>
+          <li><a href="index.html">jQuery</a></li>
+          <li><a href="02-adding.html">Adding</a></li>
+          <li class="active"><a href="03-effects.html">Effects</a></li>
+          <li><a href="04-animate.html">Animate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="info">
+      <article class="hero clearfix">
+        <div class="col_100">
+          <h1>Стандартные эффекты jQuery</h1>
+          <button type="button" class="button" id="btn-show">Show</button>
+          <button type="button" class="button" id="btn-hide">Hide</button>
+          <button type="button" class="button" id="btn-toggle">Toggle</button>
+          <button type="button" class="button" id="btn-fade-in">Fade In</button>
+          <button type="button" class="button" id="btn-fade-out">Fade Out</button>
+          <button type="button" class="button" id="btn-slide-down">Slide Down</button>
+          <button type="button" class="button" id="btn-slide-up">Slide Up</button>
+        </div>
+        <div class="col_50">
+          <div class="dst">
+            <div class="el"></div>
+          </div>
+
+        </div>
+        <div class="col_50">
+            <textarea cols="80" rows="20" id="src">    var $dst = $("div.dst");
+    var $el = $("div.dst div.el");
+    $("#btn-show").click(function() {
+        $el.show();
+    });
+    $("#btn-hide").click(function() {
+        $el.hide();
+    });
+    $("#btn-toggle").click(function() {
+        $el.toggle();
+    });
+    $("#btn-fade-in").click(function() {
+        $el.fadeIn();
+    });
+    $("#btn-fade-out").click(function() {
+        $el.fadeOut();
+    });
+    $("#btn-slide-down").click(function() {
+        $el.slideDown();
+    });
+    $("#btn-slide-up").click(function() {
+        $el.slideUp();
+    });
+</textarea>
+        </div>
+      </article>
+    </div>
+    
+    <footer class="footer clearfix">
+      <div class="copyright">Keep it simplest</div>
+
+      <nav class="menu_bottom">
+        <ul>
+          <li><a href="index.html">jQuery</a></li>
+          <li><a href="02-adding.html">Adding</a></li>
+          <li class="active"><a href="03-effects.html">Effects</a></li>
+          <li><a href="04-animate.html">Animate</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </div>
+</body>
+</html>
